@@ -1,0 +1,1094 @@
+2021-01-26T23:49:03.9153598Z ##[section]Starting: AWS Workload
+2021-01-26T23:49:04.0795628Z ##[section]Starting: Initialize job
+2021-01-26T23:49:04.0796851Z Agent name: 'Hosted Agent'
+2021-01-26T23:49:04.0797191Z Agent machine name: 'fv-az49-570'
+2021-01-26T23:49:04.0797402Z Current agent version: '2.181.0'
+2021-01-26T23:49:04.0836893Z ##[group]Operating System
+2021-01-26T23:49:04.0837152Z Microsoft Windows Server 2019
+2021-01-26T23:49:04.0837484Z 10.0.17763
+2021-01-26T23:49:04.0837618Z Datacenter
+2021-01-26T23:49:04.0837777Z ##[endgroup]
+2021-01-26T23:49:04.0837940Z ##[group]Virtual Environment
+2021-01-26T23:49:04.0838321Z Environment: windows-2019
+2021-01-26T23:49:04.0838501Z Version: 20201210.0
+2021-01-26T23:49:04.0838807Z Included Software: https://github.com/actions/virtual-environments/blob/win19/20201210.0/images/win/Windows2019-Readme.md
+2021-01-26T23:49:04.0839096Z ##[endgroup]
+2021-01-26T23:49:04.0840082Z Current image version: '20201210.0'
+2021-01-26T23:49:04.0847499Z Agent running as: 'VssAdministrator'
+2021-01-26T23:49:04.0858576Z Prepare release directory.
+2021-01-26T23:49:04.0867583Z ReleaseId=37, TeamProjectId=34068122-3904-41f2-8dc6-846e67590a90, ReleaseDefinitionName=Challenge
+2021-01-26T23:49:04.0933336Z Release folder: D:\a\r1\a
+2021-01-26T23:49:04.1040353Z Environment variables available are below.  Note that these environment variables can be referred to in the task (in the ReleaseDefinition) by replacing "_" with "." e.g. AGENT_NAME environment variable can be referenced using Agent.Name in the ReleaseDefinition: 
+				[AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN] --> [true]
+				[AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN] --> [true]
+				[AGENT_HOMEDIRECTORY] --> [C:\agents\2.181.0]
+				[AGENT_ID] --> [8]
+				[AGENT_JOBNAME] --> [AWS Workload]
+				[AGENT_MACHINENAME] --> [fv-az49-570]
+				[AGENT_NAME] --> [Hosted Agent]
+				[AGENT_OS] --> [Windows_NT]
+				[AGENT_OSARCHITECTURE] --> [X64]
+				[AGENT_RELEASEDIRECTORY] --> [D:\a\r1\a]
+				[AGENT_RETAINDEFAULTENCODING] --> [false]
+				[AGENT_ROOTDIRECTORY] --> [D:\a]
+				[AGENT_SERVEROMDIRECTORY] --> [C:\agents\2.181.0\externals\vstsom]
+				[AGENT_TEMPDIRECTORY] --> [D:\a\_temp]
+				[AGENT_TOOLSDIRECTORY] --> [C:/hostedtoolcache/windows]
+				[AGENT_VERSION] --> [2.181.0]
+				[AGENT_WORKFOLDER] --> [D:\a]
+				[AWSREGION] --> [***]
+				[AZURE_HTTP_USER_AGENT] --> [VSTS_339709a4-7af0-441e-9c37-a490c62140c6_Release__37_37_1]
+				[BUILD_BUILDID] --> [151]
+				[BUILD_BUILDNUMBER] --> [20210126.27]
+				[BUILD_BUILDURI] --> [vstfs:///Build/Build/151]
+				[BUILD_DEFINITIONID] --> [66]
+				[BUILD_DEFINITIONNAME] --> [Challenge]
+				[BUILD_PROJECTID] --> [34068122-3904-41f2-8dc6-846e67590a90]
+				[BUILD_PROJECTNAME] --> [IaC]
+				[BUILD_REPOSITORY_ID] --> [0c91ddf8-ab90-4ddb-8853-318c3bce60a5]
+				[BUILD_REPOSITORY_NAME] --> [IaC]
+				[BUILD_REPOSITORY_PROVIDER] --> [TfsGit]
+				[BUILD_REQUESTEDFOR] --> [Angel Perez]
+				[BUILD_REQUESTEDFORID] --> [fe0b8947-72fa-4e8b-97a3-52148dd51abc]
+				[BUILD_SOURCEBRANCH] --> [refs/heads/master]
+				[BUILD_SOURCEBRANCHNAME] --> [master]
+				[BUILD_SOURCEVERSION] --> [af64da82c357bf44185456853820ef8f8fcb9e8d]
+				[BUILD_TYPE] --> [Build]
+				[GIT_TERMINAL_PROMPT] --> [0]
+				[MSDEPLOY_HTTP_USER_AGENT] --> [VSTS_339709a4-7af0-441e-9c37-a490c62140c6_Release__37_37_1]
+				[RELEASE_ARTIFACTS__CHALLENGE_BUILDID] --> [151]
+				[RELEASE_ARTIFACTS__CHALLENGE_BUILDNUMBER] --> [20210126.27]
+				[RELEASE_ARTIFACTS__CHALLENGE_BUILDURI] --> [vstfs:///Build/Build/151]
+				[RELEASE_ARTIFACTS__CHALLENGE_DEFINITIONID] --> [66]
+				[RELEASE_ARTIFACTS__CHALLENGE_DEFINITIONNAME] --> [Challenge]
+				[RELEASE_ARTIFACTS__CHALLENGE_PROJECTID] --> [34068122-3904-41f2-8dc6-846e67590a90]
+				[RELEASE_ARTIFACTS__CHALLENGE_PROJECTNAME] --> [IaC]
+				[RELEASE_ARTIFACTS__CHALLENGE_REPOSITORY_ID] --> [0c91ddf8-ab90-4ddb-8853-318c3bce60a5]
+				[RELEASE_ARTIFACTS__CHALLENGE_REPOSITORY_NAME] --> [IaC]
+				[RELEASE_ARTIFACTS__CHALLENGE_REPOSITORY_PROVIDER] --> [TfsGit]
+				[RELEASE_ARTIFACTS__CHALLENGE_REQUESTEDFOR] --> [Angel Perez]
+				[RELEASE_ARTIFACTS__CHALLENGE_REQUESTEDFORID] --> [fe0b8947-72fa-4e8b-97a3-52148dd51abc]
+				[RELEASE_ARTIFACTS__CHALLENGE_SOURCEBRANCH] --> [refs/heads/master]
+				[RELEASE_ARTIFACTS__CHALLENGE_SOURCEBRANCHNAME] --> [master]
+				[RELEASE_ARTIFACTS__CHALLENGE_SOURCEVERSION] --> [af64da82c357bf44185456853820ef8f8fcb9e8d]
+				[RELEASE_ARTIFACTS__CHALLENGE_TYPE] --> [Build]
+				[RELEASE_ATTEMPTNUMBER] --> [1]
+				[RELEASE_DEFINITIONENVIRONMENTID] --> [4]
+				[RELEASE_DEFINITIONID] --> [4]
+				[RELEASE_DEFINITIONNAME] --> [Challenge]
+				[RELEASE_DEPLOYMENT_REQUESTEDFOR] --> [Angel Perez]
+				[RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL] --> [angel.ed.pec@gmail.com]
+				[RELEASE_DEPLOYMENT_REQUESTEDFORID] --> [fe0b8947-72fa-4e8b-97a3-52148dd51abc]
+				[RELEASE_DEPLOYMENT_STARTTIME] --> [2021-01-26 23:48:43Z]
+				[RELEASE_DEPLOYMENTID] --> [45]
+				[RELEASE_DEPLOYPHASEID] --> [46]
+				[RELEASE_ENVIRONMENTID] --> [37]
+				[RELEASE_ENVIRONMENTNAME] --> [IaC Workload]
+				[RELEASE_ENVIRONMENTS_IAC_WORKLOAD_STATUS] --> [InProgress]
+				[RELEASE_ENVIRONMENTURI] --> [vstfs:///ReleaseManagement/Environment/37]
+				[RELEASE_PRIMARYARTIFACTSOURCEALIAS] --> [_Challenge]
+				[RELEASE_REASON] --> [ContinuousIntegration]
+				[RELEASE_RELEASEDESCRIPTION] --> [Triggered by Challenge 20210126.27.]
+				[RELEASE_RELEASEID] --> [37]
+				[RELEASE_RELEASENAME] --> [Release-27]
+				[RELEASE_RELEASEURI] --> [vstfs:///ReleaseManagement/Release/37]
+				[RELEASE_RELEASEWEBURL] --> [https://dev.azure.com/_REMOVED_FOR_SECURITY/34068122-3904-41f2-8dc6-846e67590a90/_release?releaseId=37&_a=release-summary]
+				[RELEASE_REQUESTEDFOR] --> [Angel Perez]
+				[RELEASE_REQUESTEDFOREMAIL] --> [angel.ed.pec@gmail.com]
+				[RELEASE_REQUESTEDFORID] --> [fe0b8947-72fa-4e8b-97a3-52148dd51abc]
+				[RELEASE_SKIPARTIFACTSDOWNLOAD] --> [False]
+				[RELEASE_TRIGGERINGARTIFACT_ALIAS] --> [_Challenge]
+				[REQUESTEDFORID] --> [fe0b8947-72fa-4e8b-97a3-52148dd51abc]
+				[SYSTEM] --> [release]
+				[SYSTEM_ARTIFACTSDIRECTORY] --> [D:\a\r1\a]
+				[SYSTEM_COLLECTIONID] --> [339709a4-7af0-441e-9c37-a490c62140c6]
+				[SYSTEM_COLLECTIONURI] --> [https://vsrm.dev.azure.com/_REMOVED_FOR_SECURITY/]
+				[SYSTEM_CULTURE] --> [en-US]
+				[SYSTEM_DEFAULTWORKINGDIRECTORY] --> [D:\a\r1\a]
+				[SYSTEM_DEFINITIONID] --> [4]
+				[SYSTEM_DEFINITIONNAME] --> [Challenge]
+				[SYSTEM_ENABLEACCESSTOKEN] --> [False]
+				[SYSTEM_HOSTTYPE] --> [release]
+				[SYSTEM_JOBATTEMPT] --> [1]
+				[SYSTEM_JOBDISPLAYNAME] --> [AWS Workload]
+				[SYSTEM_JOBID] --> [6fadfdcb-372e-5bb5-cc16-757b0b6d8dc6]
+				[SYSTEM_JOBIDENTIFIER] --> [Stage_34068122390441f28dc6846e67590a90_4_1.Phase_1.__default]
+				[SYSTEM_JOBNAME] --> [__default]
+				[SYSTEM_JOBPARALLELISMTAG] --> [Private]
+				[SYSTEM_JOBPOSITIONINPHASE] --> [1]
+				[SYSTEM_JOBTIMEOUT] --> [0]
+				[SYSTEM_PHASEATTEMPT] --> [1]
+				[SYSTEM_PHASEDISPLAYNAME] --> [AWS Workload]
+				[SYSTEM_PHASEID] --> [11a855c2-1c96-5012-e17d-a34d9f550b3e]
+				[SYSTEM_PHASENAME] --> [Phase_1]
+				[SYSTEM_PIPELINESTARTTIME] --> [2021-01-26 23:49:01+00:00]
+				[SYSTEM_PLANID] --> [fe035dcc-34b0-4103-b984-23f7f097de56]
+				[SYSTEM_SERVERTYPE] --> [Hosted]
+				[SYSTEM_STAGEATTEMPT] --> [1]
+				[SYSTEM_STAGEDISPLAYNAME] --> [IaC Workload]
+				[SYSTEM_STAGEID] --> [5fde8a9d-a20e-5891-63b9-dfdf5fef9e1f]
+				[SYSTEM_STAGENAME] --> [Stage_34068122390441f28dc6846e67590a90_4_1]
+				[SYSTEM_TASKDEFINITIONSURI] --> [https://dev.azure.com/_REMOVED_FOR_SECURITY/]
+				[SYSTEM_TEAMFOUNDATIONCOLLECTIONURI] --> [https://dev.azure.com/_REMOVED_FOR_SECURITY/]
+				[SYSTEM_TEAMFOUNDATIONSERVERURI] --> [https://vsrm.dev.azure.com/_REMOVED_FOR_SECURITY/]
+				[SYSTEM_TEAMPROJECT] --> [IaC]
+				[SYSTEM_TEAMPROJECTID] --> [34068122-3904-41f2-8dc6-846e67590a90]
+				[SYSTEM_TIMELINEID] --> [fe035dcc-34b0-4103-b984-23f7f097de56]
+				[SYSTEM_TOTALJOBSINPHASE] --> [1]
+				[SYSTEM_WORKFOLDER] --> [D:\a]
+				[TFBUCKETACCOUNT] --> [tfbucket-ap1083]
+				[TFCONTAINERNAME] --> [terraform]
+				[TFGROUP] --> [tfgroup]
+2021-01-26T23:49:04.4201450Z Creating artifacts directory: D:\a\r1\a
+2021-01-26T23:49:04.4834616Z Created artifacts directory: D:\a\r1\a
+2021-01-26T23:49:04.4883431Z Download all required tasks.
+2021-01-26T23:49:04.5001241Z Downloading task: DownloadBuildArtifacts (0.178.0)
+2021-01-26T23:49:06.5276780Z Downloading task: replacetokens (3.6.0)
+2021-01-26T23:49:06.7424862Z Downloading task: TerraformInstaller (0.0.19)
+2021-01-26T23:49:07.0866976Z Downloading task: TerraformTaskV1 (0.0.142)
+2021-01-26T23:49:08.0143259Z Checking job knob settings.
+2021-01-26T23:49:08.0150318Z    Knob: AgentToolsDirectory = C:/hostedtoolcache/windows Source: ${AGENT_TOOLSDIRECTORY} 
+2021-01-26T23:49:08.0151405Z    Knob: AgentPerflog = c:\vsts\perflog Source: ${VSTS_AGENT_PERFLOG} 
+2021-01-26T23:49:08.0152360Z Finished checking job knob settings.
+2021-01-26T23:49:08.0433013Z Start tracking orphan processes.
+2021-01-26T23:49:08.0500338Z ##[section]Finishing: Initialize job
+2021-01-26T23:49:08.0905565Z ##[section]Starting: Download artifact - _Challenge - drop
+2021-01-26T23:49:08.2015313Z ==============================================================================
+2021-01-26T23:49:08.2016103Z Task         : Download build artifacts
+2021-01-26T23:49:08.2016661Z Description  : Download files that were saved as artifacts of a completed build
+2021-01-26T23:49:08.2016961Z Version      : 0.178.0
+2021-01-26T23:49:08.2017413Z Author       : Microsoft Corporation
+2021-01-26T23:49:08.2017995Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-build-artifacts
+2021-01-26T23:49:08.2018573Z ==============================================================================
+2021-01-26T23:49:09.5285678Z Downloading artifacts for build: 151
+2021-01-26T23:49:09.6974127Z Downloading items from container resource #/11006595/drop
+2021-01-26T23:49:09.6975470Z Downloading artifact drop from: https://dev.azure.com/_REMOVED_FOR_SECURITY//_apis/resources/Containers/11006595?itemPath=drop&isShallow=true&api-version=4.1-preview.4
+2021-01-26T23:49:09.8763808Z Downloading drop/151.zip to D:\a\r1\a\_Challenge\drop\151.zip
+2021-01-26T23:49:09.8765138Z Downloaded drop/151.zip to D:\a\r1\a\_Challenge\drop\151.zip
+2021-01-26T23:49:09.9572911Z Downloading drop/Terraform/deployment.tf to D:\a\r1\a\_Challenge\drop\Terraform\deployment.tf
+2021-01-26T23:49:09.9616808Z Downloaded drop/Terraform/deployment.tf to D:\a\r1\a\_Challenge\drop\Terraform\deployment.tf
+2021-01-26T23:49:10.0084852Z Downloading drop/Terraform/DevOpsKey.pem to D:\a\r1\a\_Challenge\drop\Terraform\DevOpsKey.pem
+2021-01-26T23:49:10.0089322Z Downloaded drop/Terraform/DevOpsKey.pem to D:\a\r1\a\_Challenge\drop\Terraform\DevOpsKey.pem
+2021-01-26T23:49:10.0597461Z Downloading drop/Terraform/showip.conf to D:\a\r1\a\_Challenge\drop\Terraform\showip.conf
+2021-01-26T23:49:10.0602867Z Downloaded drop/Terraform/showip.conf to D:\a\r1\a\_Challenge\drop\Terraform\showip.conf
+2021-01-26T23:49:10.0931359Z Downloading drop/Terraform/variables.tf to D:\a\r1\a\_Challenge\drop\Terraform\variables.tf
+2021-01-26T23:49:10.0931911Z Downloaded drop/Terraform/variables.tf to D:\a\r1\a\_Challenge\drop\Terraform\variables.tf
+2021-01-26T23:49:10.7204331Z Total Files: 5, Processed: 5, Skipped: 0, Failed: 0, Download time: 1.009 secs, Download size: 6449Bytes
+2021-01-26T23:49:10.7400937Z Successfully downloaded artifacts to D:\a\r1\a/_Challenge/
+2021-01-26T23:49:10.7448388Z ##[section]Finishing: Download artifact - _Challenge - drop
+2021-01-26T23:49:10.7488514Z ##[section]Starting: Replace tokens in AWS Terraform File
+2021-01-26T23:49:10.7621783Z ==============================================================================
+2021-01-26T23:49:10.7622120Z Task         : Replace Tokens
+2021-01-26T23:49:10.7622392Z Description  : Replace tokens in files
+2021-01-26T23:49:10.7622624Z Version      : 3.6.0
+2021-01-26T23:49:10.7622878Z Author       : Guillaume Rouchon
+2021-01-26T23:49:10.7623781Z Help         : v3.6.0 - [More Information](https://github.com/qetza/vsts-replacetokens-task#readme)
+2021-01-26T23:49:10.7624562Z ==============================================================================
+2021-01-26T23:49:11.5038204Z replacing tokens in: D:\a\r1\a\_Challenge\drop\Terraform\deployment.tf
+2021-01-26T23:49:11.5040480Z   3 tokens replaced out of 3
+2021-01-26T23:49:11.5040813Z replaced 3 tokens out of 3 in 1 file(s) in 0.035 seconds.
+2021-01-26T23:49:11.9795426Z ##[section]Finishing: Replace tokens in AWS Terraform File
+2021-01-26T23:49:11.9837000Z ##[section]Starting: Install Terraform AWS
+2021-01-26T23:49:11.9971497Z ==============================================================================
+2021-01-26T23:49:11.9971805Z Task         : Terraform tool installer
+2021-01-26T23:49:11.9972126Z Description  : Find in cache or download a specific version of Terraform and prepend it to the PATH
+2021-01-26T23:49:11.9972426Z Version      : 0.0.19
+2021-01-26T23:49:11.9972637Z Author       : Microsoft Corporation
+2021-01-26T23:49:11.9972955Z Help         : [Learn more about this task](https://aka.ms/AA5jd97)
+2021-01-26T23:49:11.9973280Z ==============================================================================
+2021-01-26T23:49:12.2685531Z Downloading: https://releases.hashicorp.com/terraform/0.12.3/terraform_0.12.3_windows_amd64.zip
+2021-01-26T23:49:12.4907245Z Extracting archive
+2021-01-26T23:49:12.5059553Z [command]C:\windows\system32\chcp.com 65001
+2021-01-26T23:49:12.5099443Z Active code page: 65001
+2021-01-26T23:49:12.5373224Z [command]C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoLogo -Sta -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command "$ErrorActionPreference = 'Stop' ; try { Add-Type -AssemblyName System.IO.Compression.FileSystem } catch { } ; [System.IO.Compression.ZipFile]::ExtractToDirectory('D:\a\_temp\terraform-0.12.3-b2093c97-1ce9-49e6-9038-6c67bd19502f.zip', 'D:\a\_temp\25481052-98ea-435a-804c-3aee25fac46c')"
+2021-01-26T23:49:13.8086841Z Caching tool: terraform 0.12.3 x64
+2021-01-26T23:49:13.8645480Z Prepending PATH environment variable with directory: C:\hostedtoolcache\windows\terraform\0.12.3\x64
+2021-01-26T23:49:13.8650816Z Verifying Terraform installation...
+2021-01-26T23:49:13.8657199Z [command]C:\hostedtoolcache\windows\terraform\0.12.3\x64\terraform.exe version
+2021-01-26T23:49:14.7459771Z Terraform v0.12.3
+2021-01-26T23:49:14.7469122Z 
+2021-01-26T23:49:15.1618458Z Your version of Terraform is out of date! The latest version
+2021-01-26T23:49:15.1619438Z is 0.14.5. You can update by downloading from www.terraform.io/downloads.html
+2021-01-26T23:49:15.1870518Z ##[section]Finishing: Install Terraform AWS
+2021-01-26T23:49:15.1908061Z ##[section]Starting: Terraform AWS : init
+2021-01-26T23:49:15.2047054Z ==============================================================================
+2021-01-26T23:49:15.2047381Z Task         : Terraform
+2021-01-26T23:49:15.2047673Z Description  : Execute terraform commands to manage resources on AzureRM, Amazon Web Services(AWS) and Google Cloud Platform(GCP)
+2021-01-26T23:49:15.2047961Z Version      : 0.0.142
+2021-01-26T23:49:15.2048139Z Author       : Microsoft Corporation
+2021-01-26T23:49:15.2048420Z Help         : [Learn more about this task](https://aka.ms/AA5j5pf)
+2021-01-26T23:49:15.2048691Z ==============================================================================
+2021-01-26T23:49:15.4545305Z [command]C:\hostedtoolcache\windows\terraform\0.12.3\x64\terraform.exe init -backend-config=bucket=tfbucket-ap1083 -backend-config=key=terraform.tfstate -backend-config=region=*** -backend-config=access_key=*** -backend-config=secret_key=***
+2021-01-26T23:49:15.6069030Z 
+2021-01-26T23:49:15.6069820Z [0m[1mInitializing the backend...[0m
+2021-01-26T23:49:16.0088653Z [0m[32m
+2021-01-26T23:49:16.0089682Z Successfully configured the backend "s3"! Terraform will automatically
+2021-01-26T23:49:16.0091797Z use this backend unless the backend configuration changes.[0m
+2021-01-26T23:49:16.7294267Z 
+2021-01-26T23:49:16.7295373Z [0m[1mInitializing provider plugins...[0m
+2021-01-26T23:49:16.7296362Z - Checking for available provider plugins...
+2021-01-26T23:49:16.8102840Z - Downloading plugin for provider "aws" (hashicorp/aws) 3.25.0...
+2021-01-26T23:49:19.2289106Z 
+2021-01-26T23:49:19.2291909Z The following providers do not have any version constraints in configuration,
+2021-01-26T23:49:19.2318067Z so the latest version was installed.
+2021-01-26T23:49:19.2318811Z 
+2021-01-26T23:49:19.2319193Z To prevent automatic upgrades to new major versions that may contain breaking
+2021-01-26T23:49:19.2319607Z changes, it is recommended to add version = "..." constraints to the
+2021-01-26T23:49:19.2320005Z corresponding provider blocks in configuration, with the constraint strings
+2021-01-26T23:49:19.2320393Z suggested below.
+2021-01-26T23:49:19.2320599Z 
+2021-01-26T23:49:19.2320834Z * provider.aws: version = "~> 3.25"
+2021-01-26T23:49:19.2321049Z 
+2021-01-26T23:49:19.2321526Z [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+2021-01-26T23:49:19.2321817Z [0m[32m
+2021-01-26T23:49:19.2322142Z You may now begin working with Terraform. Try running "terraform plan" to see
+2021-01-26T23:49:19.2322548Z any changes that are required for your infrastructure. All Terraform commands
+2021-01-26T23:49:19.2322871Z should now work.
+2021-01-26T23:49:19.2323054Z 
+2021-01-26T23:49:19.2323375Z If you ever set or change modules or backend configuration for Terraform,
+2021-01-26T23:49:19.2324623Z rerun this command to reinitialize your working directory. If you forget, other
+2021-01-26T23:49:19.2325057Z commands will detect it and remind you to do so if necessary.[0m
+2021-01-26T23:49:19.2538770Z ##[section]Finishing: Terraform AWS : init
+2021-01-26T23:49:19.2569580Z ##[section]Starting: Terraform AWS : plan
+2021-01-26T23:49:19.2694029Z ==============================================================================
+2021-01-26T23:49:19.2694313Z Task         : Terraform
+2021-01-26T23:49:19.2694707Z Description  : Execute terraform commands to manage resources on AzureRM, Amazon Web Services(AWS) and Google Cloud Platform(GCP)
+2021-01-26T23:49:19.2695081Z Version      : 0.0.142
+2021-01-26T23:49:19.2695296Z Author       : Microsoft Corporation
+2021-01-26T23:49:19.2695620Z Help         : [Learn more about this task](https://aka.ms/AA5j5pf)
+2021-01-26T23:49:19.2695945Z ==============================================================================
+2021-01-26T23:49:19.5219078Z [command]C:\hostedtoolcache\windows\terraform\0.12.3\x64\terraform.exe providers
+2021-01-26T23:49:20.3579213Z .
+2021-01-26T23:49:20.3585043Z └── provider.aws
+2021-01-26T23:49:20.3585217Z 
+2021-01-26T23:49:20.3616686Z [command]C:\hostedtoolcache\windows\terraform\0.12.3\x64\terraform.exe plan
+2021-01-26T23:49:25.3485141Z [0m[1mRefreshing Terraform state in-memory prior to plan...[0m
+2021-01-26T23:49:25.3487772Z The refreshed state will be used to calculate this plan, but will not be
+2021-01-26T23:49:25.3488439Z persisted to local or remote state storage.
+2021-01-26T23:49:25.3494138Z [0m
+2021-01-26T23:49:26.5426741Z [0m[1maws_eip.publiceip: Refreshing state... [id=eipalloc-0bd87bd170fbf4c08][0m
+2021-01-26T23:49:26.5428849Z [0m[1maws_vpc.chall_vpc: Refreshing state... [id=vpc-0c11e5f973fb54abd][0m
+2021-01-26T23:49:26.7928991Z [0m[1maws_security_group.chall_sg_priv: Refreshing state... [id=sg-083db83b58bf6d95d][0m
+2021-01-26T23:49:26.7944863Z [0m[1maws_internet_gateway.chall_igw: Refreshing state... [id=igw-05743f90ce247a9e8][0m
+2021-01-26T23:49:26.7948169Z [0m[1maws_subnet.publicsnet: Refreshing state... [id=subnet-05150ca1ab0dc31eb][0m
+2021-01-26T23:49:26.7951781Z [0m[1maws_route_table.chall_route_nat: Refreshing state... [id=rtb-0f49c938288b39325][0m
+2021-01-26T23:49:26.7955774Z [0m[1maws_security_group.chall_sg_pub: Refreshing state... [id=sg-035946ac303b5c5b3][0m
+2021-01-26T23:49:26.7957792Z [0m[1maws_route_table.chall_route_public: Refreshing state... [id=rtb-0ae7e3aaadf4039c5][0m
+2021-01-26T23:49:26.7958778Z [0m[1maws_subnet.privatesnet: Refreshing state... [id=subnet-0fa7af372fdf6ef41][0m
+2021-01-26T23:49:27.0208844Z [0m[1maws_nat_gateway.chall_nat: Refreshing state... [id=nat-0c19aadc898775b98][0m
+2021-01-26T23:49:27.0232269Z [0m[1maws_route_table_association.chall_route_assoc_public: Refreshing state... [id=rtbassoc-0ab26c97d2b725092][0m
+2021-01-26T23:49:27.0305275Z [0m[1maws_security_group.chall_sg_nat: Refreshing state... [id=sg-02fa6c986f57ab140][0m
+2021-01-26T23:49:27.0307892Z [0m[1maws_route_table_association.chall_route_assoc_nat: Refreshing state... [id=rtbassoc-00195bbf2a1641c23][0m
+2021-01-26T23:49:27.0337103Z [0m[1maws_instance.chall_instance: Refreshing state... [id=i-082df9f6cec5a1695][0m
+2021-01-26T23:49:27.0363974Z [0m[1maws_route.chall_pub_route: Refreshing state... [id=r-rtb-0ae7e3aaadf4039c51080289494][0m
+2021-01-26T23:49:27.2573338Z [0m[1maws_route.chall_priv_route: Refreshing state... [id=r-rtb-0f49c938288b393251080289494][0m
+2021-01-26T23:49:27.2859562Z [0m[1maws_instance.jumpbox: Refreshing state... [id=i-0f9dc914b7a6998f9][0m
+2021-01-26T23:49:27.2953543Z [0m[1maws_elb.chall-elb: Refreshing state... [id=chall-elb][0m
+2021-01-26T23:49:27.5206555Z [0m[1maws_eip.jumboxeip: Refreshing state... [id=eipalloc-088d583707e55d796][0m
+2021-01-26T23:49:27.7781273Z 
+2021-01-26T23:49:27.7786198Z ------------------------------------------------------------------------
+2021-01-26T23:49:28.9254364Z 
+2021-01-26T23:49:28.9314143Z An execution plan has been generated and is shown below.
+2021-01-26T23:49:28.9329773Z Resource actions are indicated with the following symbols:
+2021-01-26T23:49:28.9334537Z   [32m+[0m create
+2021-01-26T23:49:28.9346102Z [31m-[0m/[32m+[0m destroy and then create replacement
+2021-01-26T23:49:28.9348895Z [0m
+2021-01-26T23:49:28.9349754Z Terraform will perform the following actions:
+2021-01-26T23:49:28.9350044Z 
+2021-01-26T23:49:28.9361195Z [1m  # aws_eip.jumboxeip[0m will be created[0m[0m
+2021-01-26T23:49:28.9361766Z [0m[32m  +[0m [0mresource "aws_eip" "jumboxeip" {
+2021-01-26T23:49:28.9362268Z       [32m+[0m [0m[1m[0mallocation_id[0m[0m        = (known after apply)
+2021-01-26T23:49:28.9363160Z       [32m+[0m [0m[1m[0massociation_id[0m[0m       = (known after apply)
+2021-01-26T23:49:28.9368292Z       [32m+[0m [0m[1m[0mcarrier_ip[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9369014Z       [32m+[0m [0m[1m[0mcustomer_owned_ip[0m[0m    = (known after apply)
+2021-01-26T23:49:28.9369620Z       [32m+[0m [0m[1m[0mdomain[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9370223Z       [32m+[0m [0m[1m[0mid[0m[0m                   = (known after apply)
+2021-01-26T23:49:28.9370803Z       [32m+[0m [0m[1m[0minstance[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9371552Z       [32m+[0m [0m[1m[0mnetwork_border_group[0m[0m = (known after apply)
+2021-01-26T23:49:28.9372099Z       [32m+[0m [0m[1m[0mnetwork_interface[0m[0m    = (known after apply)
+2021-01-26T23:49:28.9372677Z       [32m+[0m [0m[1m[0mprivate_dns[0m[0m          = (known after apply)
+2021-01-26T23:49:28.9373237Z       [32m+[0m [0m[1m[0mprivate_ip[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9379627Z       [32m+[0m [0m[1m[0mpublic_dns[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9380445Z       [32m+[0m [0m[1m[0mpublic_ip[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9381143Z       [32m+[0m [0m[1m[0mpublic_ipv4_pool[0m[0m     = (known after apply)
+2021-01-26T23:49:28.9381622Z       [32m+[0m [0m[1m[0mvpc[0m[0m                  = true
+2021-01-26T23:49:28.9382125Z     }
+2021-01-26T23:49:28.9382484Z 
+2021-01-26T23:49:28.9382896Z [1m  # aws_elb.chall-elb[0m will be created[0m[0m
+2021-01-26T23:49:28.9383352Z [0m[32m  +[0m [0mresource "aws_elb" "chall-elb" {
+2021-01-26T23:49:28.9383862Z       [32m+[0m [0m[1m[0marn[0m[0m                         = (known after apply)
+2021-01-26T23:49:28.9384378Z       [32m+[0m [0m[1m[0mavailability_zones[0m[0m          = (known after apply)
+2021-01-26T23:49:28.9385116Z       [32m+[0m [0m[1m[0mconnection_draining[0m[0m         = false
+2021-01-26T23:49:28.9385587Z       [32m+[0m [0m[1m[0mconnection_draining_timeout[0m[0m = 300
+2021-01-26T23:49:28.9386893Z       [32m+[0m [0m[1m[0mcross_zone_load_balancing[0m[0m   = true
+2021-01-26T23:49:28.9387462Z       [32m+[0m [0m[1m[0mdns_name[0m[0m                    = (known after apply)
+2021-01-26T23:49:28.9388180Z       [32m+[0m [0m[1m[0mid[0m[0m                          = (known after apply)
+2021-01-26T23:49:28.9388707Z       [32m+[0m [0m[1m[0midle_timeout[0m[0m                = 60
+2021-01-26T23:49:28.9389324Z       [32m+[0m [0m[1m[0minstances[0m[0m                   = (known after apply)
+2021-01-26T23:49:28.9389953Z       [32m+[0m [0m[1m[0minternal[0m[0m                    = (known after apply)
+2021-01-26T23:49:28.9390458Z       [32m+[0m [0m[1m[0mname[0m[0m                        = "chall-elb"
+2021-01-26T23:49:28.9391000Z       [32m+[0m [0m[1m[0msecurity_groups[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9391532Z       [32m+[0m [0m[1m[0msource_security_group[0m[0m       = (known after apply)
+2021-01-26T23:49:28.9392075Z       [32m+[0m [0m[1m[0msource_security_group_id[0m[0m    = (known after apply)
+2021-01-26T23:49:28.9392569Z       [32m+[0m [0m[1m[0msubnets[0m[0m                     = (known after apply)
+2021-01-26T23:49:28.9393077Z       [32m+[0m [0m[1m[0mzone_id[0m[0m                     = (known after apply)
+2021-01-26T23:49:28.9393429Z 
+2021-01-26T23:49:28.9394193Z       [32m+[0m [0mhealth_check {
+2021-01-26T23:49:28.9394751Z           [32m+[0m [0m[1m[0mhealthy_threshold[0m[0m   = (known after apply)
+2021-01-26T23:49:28.9395371Z           [32m+[0m [0m[1m[0minterval[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9395928Z           [32m+[0m [0m[1m[0mtarget[0m[0m              = (known after apply)
+2021-01-26T23:49:28.9396509Z           [32m+[0m [0m[1m[0mtimeout[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9397084Z           [32m+[0m [0m[1m[0munhealthy_threshold[0m[0m = (known after apply)
+2021-01-26T23:49:28.9397503Z         }
+2021-01-26T23:49:28.9397815Z 
+2021-01-26T23:49:28.9398293Z       [32m+[0m [0mlistener {
+2021-01-26T23:49:28.9398694Z           [32m+[0m [0m[1m[0minstance_port[0m[0m     = 80
+2021-01-26T23:49:28.9400493Z           [32m+[0m [0m[1m[0minstance_protocol[0m[0m = "http"
+2021-01-26T23:49:28.9401020Z           [32m+[0m [0m[1m[0mlb_port[0m[0m           = 80
+2021-01-26T23:49:28.9401472Z           [32m+[0m [0m[1m[0mlb_protocol[0m[0m       = "http"
+2021-01-26T23:49:28.9401847Z         }
+2021-01-26T23:49:28.9402123Z     }
+2021-01-26T23:49:28.9402395Z 
+2021-01-26T23:49:28.9402751Z [1m  # aws_instance.chall_instance[0m will be created[0m[0m
+2021-01-26T23:49:28.9403191Z [0m[32m  +[0m [0mresource "aws_instance" "chall_instance" {
+2021-01-26T23:49:28.9403664Z       [32m+[0m [0m[1m[0mami[0m[0m                          = "ami-00ddb0e5626798373"
+2021-01-26T23:49:28.9404188Z       [32m+[0m [0m[1m[0marn[0m[0m                          = (known after apply)
+2021-01-26T23:49:28.9404660Z       [32m+[0m [0m[1m[0massociate_public_ip_address[0m[0m  = false
+2021-01-26T23:49:28.9405134Z       [32m+[0m [0m[1m[0mavailability_zone[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9405610Z       [32m+[0m [0m[1m[0mcpu_core_count[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9406180Z       [32m+[0m [0m[1m[0mcpu_threads_per_core[0m[0m         = (known after apply)
+2021-01-26T23:49:28.9406672Z       [32m+[0m [0m[1m[0mget_password_data[0m[0m            = false
+2021-01-26T23:49:28.9407172Z       [32m+[0m [0m[1m[0mhost_id[0m[0m                      = (known after apply)
+2021-01-26T23:49:28.9407753Z       [32m+[0m [0m[1m[0mid[0m[0m                           = (known after apply)
+2021-01-26T23:49:28.9408361Z       [32m+[0m [0m[1m[0minstance_state[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9409061Z       [32m+[0m [0m[1m[0minstance_type[0m[0m                = "t2.micro"
+2021-01-26T23:49:28.9409571Z       [32m+[0m [0m[1m[0mipv6_address_count[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9410066Z       [32m+[0m [0m[1m[0mipv6_addresses[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9410920Z       [32m+[0m [0m[1m[0mkey_name[0m[0m                     = "DevOpsKey"
+2021-01-26T23:49:28.9411513Z       [32m+[0m [0m[1m[0moutpost_arn[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9412310Z       [32m+[0m [0m[1m[0mpassword_data[0m[0m                = (known after apply)
+2021-01-26T23:49:28.9412847Z       [32m+[0m [0m[1m[0mplacement_group[0m[0m              = (known after apply)
+2021-01-26T23:49:28.9413395Z       [32m+[0m [0m[1m[0mprimary_network_interface_id[0m[0m = (known after apply)
+2021-01-26T23:49:28.9414004Z       [32m+[0m [0m[1m[0mprivate_dns[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9414772Z       [32m+[0m [0m[1m[0mprivate_ip[0m[0m                   = (known after apply)
+2021-01-26T23:49:28.9427155Z       [32m+[0m [0m[1m[0mpublic_dns[0m[0m                   = (known after apply)
+2021-01-26T23:49:28.9428007Z       [32m+[0m [0m[1m[0mpublic_ip[0m[0m                    = (known after apply)
+2021-01-26T23:49:28.9428663Z       [32m+[0m [0m[1m[0msecondary_private_ips[0m[0m        = (known after apply)
+2021-01-26T23:49:28.9429284Z       [32m+[0m [0m[1m[0msecurity_groups[0m[0m              = (known after apply)
+2021-01-26T23:49:28.9430004Z       [32m+[0m [0m[1m[0msource_dest_check[0m[0m            = true
+2021-01-26T23:49:28.9430583Z       [32m+[0m [0m[1m[0msubnet_id[0m[0m                    = (known after apply)
+2021-01-26T23:49:28.9431122Z       [32m+[0m [0m[1m[0mtags[0m[0m                         = {
+2021-01-26T23:49:28.9431568Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:28.9431948Z         }
+2021-01-26T23:49:28.9432506Z       [32m+[0m [0m[1m[0mtenancy[0m[0m                      = (known after apply)
+2021-01-26T23:49:28.9433028Z       [32m+[0m [0m[1m[0mvpc_security_group_ids[0m[0m       = (known after apply)
+2021-01-26T23:49:28.9433379Z 
+2021-01-26T23:49:28.9433688Z       [32m+[0m [0mebs_block_device {
+2021-01-26T23:49:28.9434288Z           [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+2021-01-26T23:49:28.9434833Z           [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9435507Z           [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9436170Z           [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9436788Z           [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9437459Z           [32m+[0m [0m[1m[0msnapshot_id[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9438125Z           [32m+[0m [0m[1m[0mtags[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9439052Z           [32m+[0m [0m[1m[0mthroughput[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9439715Z           [32m+[0m [0m[1m[0mvolume_id[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9440546Z           [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9441384Z           [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9442139Z         }
+2021-01-26T23:49:28.9442765Z 
+2021-01-26T23:49:28.9443421Z       [32m+[0m [0menclave_options {
+2021-01-26T23:49:28.9444011Z           [32m+[0m [0m[1m[0menabled[0m[0m = (known after apply)
+2021-01-26T23:49:28.9444482Z         }
+2021-01-26T23:49:28.9497250Z 
+2021-01-26T23:49:28.9500624Z       [32m+[0m [0mephemeral_block_device {
+2021-01-26T23:49:28.9503202Z           [32m+[0m [0m[1m[0mdevice_name[0m[0m  = (known after apply)
+2021-01-26T23:49:28.9504039Z           [32m+[0m [0m[1m[0mno_device[0m[0m    = (known after apply)
+2021-01-26T23:49:28.9504455Z           [32m+[0m [0m[1m[0mvirtual_name[0m[0m = (known after apply)
+2021-01-26T23:49:28.9504892Z         }
+2021-01-26T23:49:28.9507190Z 
+2021-01-26T23:49:28.9508061Z       [32m+[0m [0mmetadata_options {
+2021-01-26T23:49:28.9508707Z           [32m+[0m [0m[1m[0mhttp_endpoint[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9509634Z           [32m+[0m [0m[1m[0mhttp_put_response_hop_limit[0m[0m = (known after apply)
+2021-01-26T23:49:28.9510344Z           [32m+[0m [0m[1m[0mhttp_tokens[0m[0m                 = (known after apply)
+2021-01-26T23:49:28.9511068Z         }
+2021-01-26T23:49:28.9519306Z 
+2021-01-26T23:49:28.9520471Z       [32m+[0m [0mnetwork_interface {
+2021-01-26T23:49:28.9521187Z           [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+2021-01-26T23:49:28.9522074Z           [32m+[0m [0m[1m[0mdevice_index[0m[0m          = (known after apply)
+2021-01-26T23:49:28.9522880Z           [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m  = (known after apply)
+2021-01-26T23:49:28.9523457Z         }
+2021-01-26T23:49:28.9523767Z 
+2021-01-26T23:49:28.9524148Z       [32m+[0m [0mroot_block_device {
+2021-01-26T23:49:28.9524735Z           [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+2021-01-26T23:49:28.9525513Z           [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9526262Z           [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9526947Z           [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9527594Z           [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9528515Z           [32m+[0m [0m[1m[0mtags[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9529153Z           [32m+[0m [0m[1m[0mthroughput[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9529839Z           [32m+[0m [0m[1m[0mvolume_id[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9530457Z           [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9531128Z           [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9531629Z         }
+2021-01-26T23:49:28.9532056Z     }
+2021-01-26T23:49:28.9532371Z 
+2021-01-26T23:49:28.9532798Z [1m  # aws_instance.jumpbox[0m will be created[0m[0m
+2021-01-26T23:49:28.9533390Z [0m[32m  +[0m [0mresource "aws_instance" "jumpbox" {
+2021-01-26T23:49:28.9534113Z       [32m+[0m [0m[1m[0mami[0m[0m                          = "ami-01ef31f9f39c5aaed"
+2021-01-26T23:49:28.9535010Z       [32m+[0m [0m[1m[0marn[0m[0m                          = (known after apply)
+2021-01-26T23:49:28.9535641Z       [32m+[0m [0m[1m[0massociate_public_ip_address[0m[0m  = true
+2021-01-26T23:49:28.9536279Z       [32m+[0m [0m[1m[0mavailability_zone[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9536895Z       [32m+[0m [0m[1m[0mcpu_core_count[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9537569Z       [32m+[0m [0m[1m[0mcpu_threads_per_core[0m[0m         = (known after apply)
+2021-01-26T23:49:28.9538281Z       [32m+[0m [0m[1m[0mget_password_data[0m[0m            = false
+2021-01-26T23:49:28.9538951Z       [32m+[0m [0m[1m[0mhost_id[0m[0m                      = (known after apply)
+2021-01-26T23:49:28.9539822Z       [32m+[0m [0m[1m[0mid[0m[0m                           = (known after apply)
+2021-01-26T23:49:28.9540539Z       [32m+[0m [0m[1m[0minstance_state[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9542127Z       [32m+[0m [0m[1m[0minstance_type[0m[0m                = "t2.micro"
+2021-01-26T23:49:28.9542825Z       [32m+[0m [0m[1m[0mipv6_address_count[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9543432Z       [32m+[0m [0m[1m[0mipv6_addresses[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9544100Z       [32m+[0m [0m[1m[0mkey_name[0m[0m                     = "DevOpsKey"
+2021-01-26T23:49:28.9545382Z       [32m+[0m [0m[1m[0moutpost_arn[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9546406Z       [32m+[0m [0m[1m[0mpassword_data[0m[0m                = (known after apply)
+2021-01-26T23:49:28.9547204Z       [32m+[0m [0m[1m[0mplacement_group[0m[0m              = (known after apply)
+2021-01-26T23:49:28.9547960Z       [32m+[0m [0m[1m[0mprimary_network_interface_id[0m[0m = (known after apply)
+2021-01-26T23:49:28.9548716Z       [32m+[0m [0m[1m[0mprivate_dns[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9549438Z       [32m+[0m [0m[1m[0mprivate_ip[0m[0m                   = (known after apply)
+2021-01-26T23:49:28.9550176Z       [32m+[0m [0m[1m[0mpublic_dns[0m[0m                   = (known after apply)
+2021-01-26T23:49:28.9551087Z       [32m+[0m [0m[1m[0mpublic_ip[0m[0m                    = (known after apply)
+2021-01-26T23:49:28.9552087Z       [32m+[0m [0m[1m[0msecondary_private_ips[0m[0m        = (known after apply)
+2021-01-26T23:49:28.9552714Z       [32m+[0m [0m[1m[0msecurity_groups[0m[0m              = (known after apply)
+2021-01-26T23:49:28.9562142Z       [32m+[0m [0m[1m[0msource_dest_check[0m[0m            = false
+2021-01-26T23:49:28.9562944Z       [32m+[0m [0m[1m[0msubnet_id[0m[0m                    = (known after apply)
+2021-01-26T23:49:28.9565364Z       [32m+[0m [0m[1m[0mtags[0m[0m                         = {
+2021-01-26T23:49:28.9565763Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:28.9566487Z           [32m+[0m [0m"Name"        = "VPC NAT"
+2021-01-26T23:49:28.9567066Z         }
+2021-01-26T23:49:28.9567579Z       [32m+[0m [0m[1m[0mtenancy[0m[0m                      = (known after apply)
+2021-01-26T23:49:28.9569830Z       [32m+[0m [0m[1m[0mvpc_security_group_ids[0m[0m       = (known after apply)
+2021-01-26T23:49:28.9570369Z 
+2021-01-26T23:49:28.9570883Z       [32m+[0m [0mebs_block_device {
+2021-01-26T23:49:28.9571471Z           [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+2021-01-26T23:49:28.9572361Z           [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9572943Z           [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9573757Z           [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9574308Z           [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9574944Z           [32m+[0m [0m[1m[0msnapshot_id[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9575827Z           [32m+[0m [0m[1m[0mtags[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9576612Z           [32m+[0m [0m[1m[0mthroughput[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9577139Z           [32m+[0m [0m[1m[0mvolume_id[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9577935Z           [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9578642Z           [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9579285Z         }
+2021-01-26T23:49:28.9579586Z 
+2021-01-26T23:49:28.9580086Z       [32m+[0m [0menclave_options {
+2021-01-26T23:49:28.9580616Z           [32m+[0m [0m[1m[0menabled[0m[0m = (known after apply)
+2021-01-26T23:49:28.9581272Z         }
+2021-01-26T23:49:28.9581548Z 
+2021-01-26T23:49:28.9582015Z       [32m+[0m [0mephemeral_block_device {
+2021-01-26T23:49:28.9582619Z           [32m+[0m [0m[1m[0mdevice_name[0m[0m  = (known after apply)
+2021-01-26T23:49:28.9583216Z           [32m+[0m [0m[1m[0mno_device[0m[0m    = (known after apply)
+2021-01-26T23:49:28.9583723Z           [32m+[0m [0m[1m[0mvirtual_name[0m[0m = (known after apply)
+2021-01-26T23:49:28.9584220Z         }
+2021-01-26T23:49:28.9584700Z 
+2021-01-26T23:49:28.9585028Z       [32m+[0m [0mmetadata_options {
+2021-01-26T23:49:28.9585588Z           [32m+[0m [0m[1m[0mhttp_endpoint[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9586136Z           [32m+[0m [0m[1m[0mhttp_put_response_hop_limit[0m[0m = (known after apply)
+2021-01-26T23:49:28.9586829Z           [32m+[0m [0m[1m[0mhttp_tokens[0m[0m                 = (known after apply)
+2021-01-26T23:49:28.9587357Z         }
+2021-01-26T23:49:28.9587642Z 
+2021-01-26T23:49:28.9588368Z       [32m+[0m [0mnetwork_interface {
+2021-01-26T23:49:28.9588950Z           [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+2021-01-26T23:49:28.9589506Z           [32m+[0m [0m[1m[0mdevice_index[0m[0m          = (known after apply)
+2021-01-26T23:49:28.9590131Z           [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m  = (known after apply)
+2021-01-26T23:49:28.9590570Z         }
+2021-01-26T23:49:28.9590931Z 
+2021-01-26T23:49:28.9591304Z       [32m+[0m [0mroot_block_device {
+2021-01-26T23:49:28.9591846Z           [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+2021-01-26T23:49:28.9592530Z           [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9593188Z           [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9593697Z           [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9594265Z           [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9594777Z           [32m+[0m [0m[1m[0mtags[0m[0m                  = (known after apply)
+2021-01-26T23:49:28.9595340Z           [32m+[0m [0m[1m[0mthroughput[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9595990Z           [32m+[0m [0m[1m[0mvolume_id[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9596557Z           [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9597168Z           [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9597562Z         }
+2021-01-26T23:49:28.9598110Z     }
+2021-01-26T23:49:28.9598358Z 
+2021-01-26T23:49:28.9598776Z [1m  # aws_internet_gateway.chall_igw[0m will be created[0m[0m
+2021-01-26T23:49:28.9599218Z [0m[32m  +[0m [0mresource "aws_internet_gateway" "chall_igw" {
+2021-01-26T23:49:28.9599724Z       [32m+[0m [0m[1m[0marn[0m[0m      = (known after apply)
+2021-01-26T23:49:28.9600179Z       [32m+[0m [0m[1m[0mid[0m[0m       = (known after apply)
+2021-01-26T23:49:28.9600699Z       [32m+[0m [0m[1m[0mowner_id[0m[0m = (known after apply)
+2021-01-26T23:49:28.9601135Z       [32m+[0m [0m[1m[0mtags[0m[0m     = {
+2021-01-26T23:49:28.9602326Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:28.9603435Z         }
+2021-01-26T23:49:28.9603971Z       [32m+[0m [0m[1m[0mvpc_id[0m[0m   = (known after apply)
+2021-01-26T23:49:28.9604556Z     }
+2021-01-26T23:49:28.9605018Z 
+2021-01-26T23:49:28.9605644Z [1m  # aws_nat_gateway.chall_nat[0m will be created[0m[0m
+2021-01-26T23:49:28.9606549Z [0m[32m  +[0m [0mresource "aws_nat_gateway" "chall_nat" {
+2021-01-26T23:49:28.9607702Z       [32m+[0m [0m[1m[0mallocation_id[0m[0m        = "eipalloc-0bd87bd170fbf4c08"
+2021-01-26T23:49:28.9608331Z       [32m+[0m [0m[1m[0mid[0m[0m                   = (known after apply)
+2021-01-26T23:49:28.9609049Z       [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m = (known after apply)
+2021-01-26T23:49:28.9609720Z       [32m+[0m [0m[1m[0mprivate_ip[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9610400Z       [32m+[0m [0m[1m[0mpublic_ip[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9611155Z       [32m+[0m [0m[1m[0msubnet_id[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9611634Z       [32m+[0m [0m[1m[0mtags[0m[0m                 = {
+2021-01-26T23:49:28.9612128Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:28.9612481Z         }
+2021-01-26T23:49:28.9612841Z     }
+2021-01-26T23:49:28.9613085Z 
+2021-01-26T23:49:28.9613520Z [1m  # aws_route.chall_priv_route[0m will be created[0m[0m
+2021-01-26T23:49:28.9614105Z [0m[32m  +[0m [0mresource "aws_route" "chall_priv_route" {
+2021-01-26T23:49:28.9614551Z       [32m+[0m [0m[1m[0mdestination_cidr_block[0m[0m     = "0.0.0.0/0"
+2021-01-26T23:49:28.9615134Z       [32m+[0m [0m[1m[0mdestination_prefix_list_id[0m[0m = (known after apply)
+2021-01-26T23:49:28.9615659Z       [32m+[0m [0m[1m[0megress_only_gateway_id[0m[0m     = (known after apply)
+2021-01-26T23:49:28.9616258Z       [32m+[0m [0m[1m[0mgateway_id[0m[0m                 = (known after apply)
+2021-01-26T23:49:28.9616752Z       [32m+[0m [0m[1m[0mid[0m[0m                         = (known after apply)
+2021-01-26T23:49:28.9617394Z       [32m+[0m [0m[1m[0minstance_id[0m[0m                = (known after apply)
+2021-01-26T23:49:28.9618149Z       [32m+[0m [0m[1m[0minstance_owner_id[0m[0m          = (known after apply)
+2021-01-26T23:49:28.9618836Z       [32m+[0m [0m[1m[0mlocal_gateway_id[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9619412Z       [32m+[0m [0m[1m[0mnat_gateway_id[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9619918Z       [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m       = (known after apply)
+2021-01-26T23:49:28.9620479Z       [32m+[0m [0m[1m[0morigin[0m[0m                     = (known after apply)
+2021-01-26T23:49:28.9620991Z       [32m+[0m [0m[1m[0mroute_table_id[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9621560Z       [32m+[0m [0m[1m[0mstate[0m[0m                      = (known after apply)
+2021-01-26T23:49:28.9621977Z     }
+2021-01-26T23:49:28.9622222Z 
+2021-01-26T23:49:28.9622708Z [1m  # aws_route.chall_pub_route[0m will be created[0m[0m
+2021-01-26T23:49:28.9623151Z [0m[32m  +[0m [0mresource "aws_route" "chall_pub_route" {
+2021-01-26T23:49:28.9634974Z       [32m+[0m [0m[1m[0mdestination_cidr_block[0m[0m     = "0.0.0.0/0"
+2021-01-26T23:49:28.9643949Z       [32m+[0m [0m[1m[0mdestination_prefix_list_id[0m[0m = (known after apply)
+2021-01-26T23:49:28.9699645Z       [32m+[0m [0m[1m[0megress_only_gateway_id[0m[0m     = (known after apply)
+2021-01-26T23:49:28.9701243Z       [32m+[0m [0m[1m[0mgateway_id[0m[0m                 = (known after apply)
+2021-01-26T23:49:28.9702073Z       [32m+[0m [0m[1m[0mid[0m[0m                         = (known after apply)
+2021-01-26T23:49:28.9702629Z       [32m+[0m [0m[1m[0minstance_id[0m[0m                = (known after apply)
+2021-01-26T23:49:28.9703077Z       [32m+[0m [0m[1m[0minstance_owner_id[0m[0m          = (known after apply)
+2021-01-26T23:49:28.9703643Z       [32m+[0m [0m[1m[0mlocal_gateway_id[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9704083Z       [32m+[0m [0m[1m[0mnat_gateway_id[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9704584Z       [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m       = (known after apply)
+2021-01-26T23:49:28.9705031Z       [32m+[0m [0m[1m[0morigin[0m[0m                     = (known after apply)
+2021-01-26T23:49:28.9705573Z       [32m+[0m [0m[1m[0mroute_table_id[0m[0m             = (known after apply)
+2021-01-26T23:49:28.9706019Z       [32m+[0m [0m[1m[0mstate[0m[0m                      = (known after apply)
+2021-01-26T23:49:28.9706579Z     }
+2021-01-26T23:49:28.9706941Z 
+2021-01-26T23:49:28.9707491Z [1m  # aws_route_table.chall_route_nat[0m will be created[0m[0m
+2021-01-26T23:49:28.9708193Z [0m[32m  +[0m [0mresource "aws_route_table" "chall_route_nat" {
+2021-01-26T23:49:28.9708714Z       [32m+[0m [0m[1m[0mid[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9709163Z       [32m+[0m [0m[1m[0mowner_id[0m[0m         = (known after apply)
+2021-01-26T23:49:28.9709667Z       [32m+[0m [0m[1m[0mpropagating_vgws[0m[0m = (known after apply)
+2021-01-26T23:49:28.9710122Z       [32m+[0m [0m[1m[0mroute[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9710601Z       [32m+[0m [0m[1m[0mtags[0m[0m             = {
+2021-01-26T23:49:28.9710991Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:28.9711354Z         }
+2021-01-26T23:49:28.9711699Z       [32m+[0m [0m[1m[0mvpc_id[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9712089Z     }
+2021-01-26T23:49:28.9712298Z 
+2021-01-26T23:49:28.9712617Z [1m  # aws_route_table.chall_route_public[0m will be created[0m[0m
+2021-01-26T23:49:28.9713147Z [0m[32m  +[0m [0mresource "aws_route_table" "chall_route_public" {
+2021-01-26T23:49:28.9713731Z       [32m+[0m [0m[1m[0mid[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9714377Z       [32m+[0m [0m[1m[0mowner_id[0m[0m         = (known after apply)
+2021-01-26T23:49:28.9714782Z       [32m+[0m [0m[1m[0mpropagating_vgws[0m[0m = (known after apply)
+2021-01-26T23:49:28.9715905Z       [32m+[0m [0m[1m[0mroute[0m[0m            = (known after apply)
+2021-01-26T23:49:28.9716373Z       [32m+[0m [0m[1m[0mtags[0m[0m             = {
+2021-01-26T23:49:28.9719613Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:28.9720970Z         }
+2021-01-26T23:49:28.9721444Z       [32m+[0m [0m[1m[0mvpc_id[0m[0m           = (known after apply)
+2021-01-26T23:49:28.9721777Z     }
+2021-01-26T23:49:28.9722059Z 
+2021-01-26T23:49:28.9722424Z [1m  # aws_route_table_association.chall_route_assoc_nat[0m must be [1m[31mreplaced[0m[0m
+2021-01-26T23:49:28.9722982Z [0m[31m-[0m/[32m+[0m [0mresource "aws_route_table_association" "chall_route_assoc_nat" {
+2021-01-26T23:49:28.9723517Z       [33m~[0m [0m[1m[0mid[0m[0m             = "rtbassoc-00195bbf2a1641c23" [33m->[0m [0m(known after apply)
+2021-01-26T23:49:28.9724156Z       [33m~[0m [0m[1m[0mroute_table_id[0m[0m = "rtb-0f49c938288b39325" [33m->[0m [0m(known after apply)
+2021-01-26T23:49:28.9724889Z       [33m~[0m [0m[1m[0msubnet_id[0m[0m      = "subnet-0fa7af372fdf6ef41" [33m->[0m [0m(known after apply) [31m# forces replacement[0m[0m
+2021-01-26T23:49:28.9725554Z     }
+2021-01-26T23:49:28.9725900Z 
+2021-01-26T23:49:28.9726305Z [1m  # aws_route_table_association.chall_route_assoc_public[0m must be [1m[31mreplaced[0m[0m
+2021-01-26T23:49:28.9726778Z [0m[31m-[0m/[32m+[0m [0mresource "aws_route_table_association" "chall_route_assoc_public" {
+2021-01-26T23:49:28.9727356Z       [33m~[0m [0m[1m[0mid[0m[0m             = "rtbassoc-0ab26c97d2b725092" [33m->[0m [0m(known after apply)
+2021-01-26T23:49:28.9728051Z       [33m~[0m [0m[1m[0mroute_table_id[0m[0m = "rtb-0ae7e3aaadf4039c5" [33m->[0m [0m(known after apply)
+2021-01-26T23:49:28.9728639Z       [33m~[0m [0m[1m[0msubnet_id[0m[0m      = "subnet-05150ca1ab0dc31eb" [33m->[0m [0m(known after apply) [31m# forces replacement[0m[0m
+2021-01-26T23:49:28.9729280Z     }
+2021-01-26T23:49:28.9729473Z 
+2021-01-26T23:49:28.9729783Z [1m  # aws_security_group.chall_sg_nat[0m will be created[0m[0m
+2021-01-26T23:49:28.9730258Z [0m[32m  +[0m [0mresource "aws_security_group" "chall_sg_nat" {
+2021-01-26T23:49:28.9730682Z       [32m+[0m [0m[1m[0marn[0m[0m                    = (known after apply)
+2021-01-26T23:49:28.9731185Z       [32m+[0m [0m[1m[0mdescription[0m[0m            = "Traffic Control"
+2021-01-26T23:49:28.9731763Z       [32m+[0m [0m[1m[0megress[0m[0m                 = [
+2021-01-26T23:49:28.9732208Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9732723Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9733113Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:28.9733398Z                 ]
+2021-01-26T23:49:28.9733747Z               [32m+[0m [0mdescription      = ""
+2021-01-26T23:49:28.9734087Z               [32m+[0m [0mfrom_port        = -1
+2021-01-26T23:49:28.9734477Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9734820Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9735218Z               [32m+[0m [0mprotocol         = "icmp"
+2021-01-26T23:49:28.9735721Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9736101Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9736804Z               [32m+[0m [0mto_port          = -1
+2021-01-26T23:49:28.9737162Z             },
+2021-01-26T23:49:28.9737431Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9737893Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9738240Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:28.9738788Z                 ]
+2021-01-26T23:49:28.9739378Z               [32m+[0m [0mdescription      = "HTTP"
+2021-01-26T23:49:28.9739825Z               [32m+[0m [0mfrom_port        = 80
+2021-01-26T23:49:28.9740095Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9740589Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9741433Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9741922Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9742257Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9742732Z               [32m+[0m [0mto_port          = 80
+2021-01-26T23:49:28.9743011Z             },
+2021-01-26T23:49:28.9743323Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9743629Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9744013Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:28.9744286Z                 ]
+2021-01-26T23:49:28.9745093Z               [32m+[0m [0mdescription      = "HTTPS"
+2021-01-26T23:49:28.9745453Z               [32m+[0m [0mfrom_port        = 443
+2021-01-26T23:49:28.9745871Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9746218Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9746649Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9747006Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9747427Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9747910Z               [32m+[0m [0mto_port          = 443
+2021-01-26T23:49:28.9748616Z             },
+2021-01-26T23:49:28.9748907Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9749304Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9749673Z                   [32m+[0m [0m"172.16.43.0/26",
+2021-01-26T23:49:28.9750047Z                 ]
+2021-01-26T23:49:28.9750364Z               [32m+[0m [0mdescription      = "SSH"
+2021-01-26T23:49:28.9750794Z               [32m+[0m [0mfrom_port        = 22
+2021-01-26T23:49:28.9751310Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9751906Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9752743Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9753217Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9753490Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9753898Z               [32m+[0m [0mto_port          = 22
+2021-01-26T23:49:28.9754177Z             },
+2021-01-26T23:49:28.9754635Z         ]
+2021-01-26T23:49:28.9755156Z       [32m+[0m [0m[1m[0mid[0m[0m                     = (known after apply)
+2021-01-26T23:49:28.9755925Z       [32m+[0m [0m[1m[0mingress[0m[0m                = [
+2021-01-26T23:49:28.9756273Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9756641Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9756989Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:28.9757335Z                 ]
+2021-01-26T23:49:28.9757645Z               [32m+[0m [0mdescription      = ""
+2021-01-26T23:49:28.9759045Z               [32m+[0m [0mfrom_port        = -1
+2021-01-26T23:49:28.9759460Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9759965Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9760383Z               [32m+[0m [0mprotocol         = "icmp"
+2021-01-26T23:49:28.9760887Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9761284Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9761781Z               [32m+[0m [0mto_port          = -1
+2021-01-26T23:49:28.9762124Z             },
+2021-01-26T23:49:28.9762466Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9763174Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9763573Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:28.9763880Z                 ]
+2021-01-26T23:49:28.9764248Z               [32m+[0m [0mdescription      = "SSH"
+2021-01-26T23:49:28.9764619Z               [32m+[0m [0mfrom_port        = 22
+2021-01-26T23:49:28.9765024Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9765677Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9766653Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9770139Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9770700Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9771096Z               [32m+[0m [0mto_port          = 22
+2021-01-26T23:49:28.9771631Z             },
+2021-01-26T23:49:28.9772121Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9772841Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9773235Z                   [32m+[0m [0m"172.16.43.16/28",
+2021-01-26T23:49:28.9773748Z                 ]
+2021-01-26T23:49:28.9774045Z               [32m+[0m [0mdescription      = "HTTP"
+2021-01-26T23:49:28.9774556Z               [32m+[0m [0mfrom_port        = 80
+2021-01-26T23:49:28.9775066Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9775485Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9775845Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9776244Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9776585Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9777012Z               [32m+[0m [0mto_port          = 80
+2021-01-26T23:49:28.9777305Z             },
+2021-01-26T23:49:28.9777613Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9777981Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9778765Z                   [32m+[0m [0m"172.16.43.16/28",
+2021-01-26T23:49:28.9779077Z                 ]
+2021-01-26T23:49:28.9779501Z               [32m+[0m [0mdescription      = "HTTPS"
+2021-01-26T23:49:28.9779871Z               [32m+[0m [0mfrom_port        = 443
+2021-01-26T23:49:28.9780280Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9780637Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9781051Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9781416Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9781831Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9782194Z               [32m+[0m [0mto_port          = 443
+2021-01-26T23:49:28.9782548Z             },
+2021-01-26T23:49:28.9782795Z         ]
+2021-01-26T23:49:28.9783122Z       [32m+[0m [0m[1m[0mname[0m[0m                   = "chall_nat"
+2021-01-26T23:49:28.9783830Z       [32m+[0m [0m[1m[0mowner_id[0m[0m               = (known after apply)
+2021-01-26T23:49:28.9784383Z       [32m+[0m [0m[1m[0mrevoke_rules_on_delete[0m[0m = false
+2021-01-26T23:49:28.9784789Z       [32m+[0m [0m[1m[0mtags[0m[0m                   = {
+2021-01-26T23:49:28.9785426Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:28.9785729Z         }
+2021-01-26T23:49:28.9786276Z       [32m+[0m [0m[1m[0mvpc_id[0m[0m                 = (known after apply)
+2021-01-26T23:49:28.9786590Z     }
+2021-01-26T23:49:28.9786766Z 
+2021-01-26T23:49:28.9787127Z [1m  # aws_security_group.chall_sg_priv[0m will be created[0m[0m
+2021-01-26T23:49:28.9787509Z [0m[32m  +[0m [0mresource "aws_security_group" "chall_sg_priv" {
+2021-01-26T23:49:28.9788403Z       [32m+[0m [0m[1m[0marn[0m[0m                    = (known after apply)
+2021-01-26T23:49:28.9800840Z       [32m+[0m [0m[1m[0mdescription[0m[0m            = "Traffic Control"
+2021-01-26T23:49:28.9808804Z       [32m+[0m [0m[1m[0megress[0m[0m                 = [
+2021-01-26T23:49:28.9809235Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9813267Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9856579Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:28.9857023Z                 ]
+2021-01-26T23:49:28.9857504Z               [32m+[0m [0mdescription      = "HTTP"
+2021-01-26T23:49:28.9857988Z               [32m+[0m [0mfrom_port        = 80
+2021-01-26T23:49:28.9858493Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9859035Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9859406Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9859818Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9860524Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9860943Z               [32m+[0m [0mto_port          = 80
+2021-01-26T23:49:28.9861247Z             },
+2021-01-26T23:49:28.9861579Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9861897Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9862309Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:28.9862602Z                 ]
+2021-01-26T23:49:28.9863029Z               [32m+[0m [0mdescription      = "HTTPS"
+2021-01-26T23:49:28.9863389Z               [32m+[0m [0mfrom_port        = 443
+2021-01-26T23:49:28.9863810Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9864166Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9864658Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9865025Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9865450Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9865806Z               [32m+[0m [0mto_port          = 443
+2021-01-26T23:49:28.9866175Z             },
+2021-01-26T23:49:28.9866699Z         ]
+2021-01-26T23:49:28.9867234Z       [32m+[0m [0m[1m[0mid[0m[0m                     = (known after apply)
+2021-01-26T23:49:28.9867640Z       [32m+[0m [0m[1m[0mingress[0m[0m                = [
+2021-01-26T23:49:28.9868418Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9868739Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9869153Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:28.9869445Z                 ]
+2021-01-26T23:49:28.9869819Z               [32m+[0m [0mdescription      = "HTTP"
+2021-01-26T23:49:28.9870183Z               [32m+[0m [0mfrom_port        = 80
+2021-01-26T23:49:28.9870604Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9870952Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9871367Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9871721Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9872137Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:28.9872784Z               [32m+[0m [0mto_port          = 80
+2021-01-26T23:49:28.9873142Z             },
+2021-01-26T23:49:28.9873397Z           [32m+[0m [0m{
+2021-01-26T23:49:28.9873759Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:28.9874094Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:28.9874645Z                 ]
+2021-01-26T23:49:28.9874969Z               [32m+[0m [0mdescription      = "HTTPS"
+2021-01-26T23:49:28.9875386Z               [32m+[0m [0mfrom_port        = 443
+2021-01-26T23:49:28.9875749Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:28.9876161Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:28.9876519Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:28.9876930Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:28.9877477Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:29.0006620Z               [32m+[0m [0mto_port          = 443
+2021-01-26T23:49:29.0007113Z             },
+2021-01-26T23:49:29.0007453Z           [32m+[0m [0m{
+2021-01-26T23:49:29.0007959Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:29.0030356Z                   [32m+[0m [0m"172.16.43.0/26",
+2021-01-26T23:49:29.0030779Z                 ]
+2021-01-26T23:49:29.0031296Z               [32m+[0m [0mdescription      = "ICMP"
+2021-01-26T23:49:29.0031671Z               [32m+[0m [0mfrom_port        = -1
+2021-01-26T23:49:29.0032252Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:29.0032658Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:29.0033044Z               [32m+[0m [0mprotocol         = "icmp"
+2021-01-26T23:49:29.0033412Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:29.0033746Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:29.0034055Z               [32m+[0m [0mto_port          = -1
+2021-01-26T23:49:29.0034296Z             },
+2021-01-26T23:49:29.0034471Z           [32m+[0m [0m{
+2021-01-26T23:49:29.0034717Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:29.0034978Z                   [32m+[0m [0m"172.16.43.0/26",
+2021-01-26T23:49:29.0035190Z                 ]
+2021-01-26T23:49:29.0035428Z               [32m+[0m [0mdescription      = "SSH"
+2021-01-26T23:49:29.0035807Z               [32m+[0m [0mfrom_port        = 22
+2021-01-26T23:49:29.0036185Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:29.0036542Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:29.0037064Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:29.0037765Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:29.0039510Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:29.0039827Z               [32m+[0m [0mto_port          = 22
+2021-01-26T23:49:29.0040481Z             },
+2021-01-26T23:49:29.0061123Z         ]
+2021-01-26T23:49:29.0061388Z       [32m+[0m [0m[1m[0mname[0m[0m                   = "challsgpriv"
+2021-01-26T23:49:29.0061931Z       [32m+[0m [0m[1m[0mowner_id[0m[0m               = (known after apply)
+2021-01-26T23:49:29.0062270Z       [32m+[0m [0m[1m[0mrevoke_rules_on_delete[0m[0m = false
+2021-01-26T23:49:29.0062604Z       [32m+[0m [0m[1m[0mtags[0m[0m                   = {
+2021-01-26T23:49:29.0062893Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:29.0063115Z         }
+2021-01-26T23:49:29.0063381Z       [32m+[0m [0m[1m[0mvpc_id[0m[0m                 = (known after apply)
+2021-01-26T23:49:29.0063637Z     }
+2021-01-26T23:49:29.0063741Z 
+2021-01-26T23:49:29.0063960Z [1m  # aws_security_group.chall_sg_pub[0m will be created[0m[0m
+2021-01-26T23:49:29.0064297Z [0m[32m  +[0m [0mresource "aws_security_group" "chall_sg_pub" {
+2021-01-26T23:49:29.0064814Z       [32m+[0m [0m[1m[0marn[0m[0m                    = (known after apply)
+2021-01-26T23:49:29.0066670Z       [32m+[0m [0m[1m[0mdescription[0m[0m            = "Traffic Control"
+2021-01-26T23:49:29.0067175Z       [32m+[0m [0m[1m[0megress[0m[0m                 = [
+2021-01-26T23:49:29.0067436Z           [32m+[0m [0m{
+2021-01-26T23:49:29.0067666Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:29.0068008Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:29.0068217Z                 ]
+2021-01-26T23:49:29.0068611Z               [32m+[0m [0mdescription      = "For Internal"
+2021-01-26T23:49:29.0068905Z               [32m+[0m [0mfrom_port        = 0
+2021-01-26T23:49:29.0069160Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:29.0069431Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:29.0069690Z               [32m+[0m [0mprotocol         = "-1"
+2021-01-26T23:49:29.0071261Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:29.0071609Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:29.0071917Z               [32m+[0m [0mto_port          = 0
+2021-01-26T23:49:29.0072141Z             },
+2021-01-26T23:49:29.0072302Z         ]
+2021-01-26T23:49:29.0072592Z       [32m+[0m [0m[1m[0mid[0m[0m                     = (known after apply)
+2021-01-26T23:49:29.0072950Z       [32m+[0m [0m[1m[0mingress[0m[0m                = [
+2021-01-26T23:49:29.0073231Z           [32m+[0m [0m{
+2021-01-26T23:49:29.0073477Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:29.0074198Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:29.0074414Z                 ]
+2021-01-26T23:49:29.0074645Z               [32m+[0m [0mdescription      = "HTTP"
+2021-01-26T23:49:29.0074905Z               [32m+[0m [0mfrom_port        = 80
+2021-01-26T23:49:29.0075157Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:29.0075427Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:29.0075694Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:29.0075970Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:29.0076229Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:29.0076504Z               [32m+[0m [0mto_port          = 80
+2021-01-26T23:49:29.0076705Z             },
+2021-01-26T23:49:29.0076888Z           [32m+[0m [0m{
+2021-01-26T23:49:29.0077289Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:29.0077556Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:29.0077793Z                 ]
+2021-01-26T23:49:29.0078015Z               [32m+[0m [0mdescription      = "HTTPS"
+2021-01-26T23:49:29.0078297Z               [32m+[0m [0mfrom_port        = 443
+2021-01-26T23:49:29.0078552Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:29.0078822Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:29.0079079Z               [32m+[0m [0mprotocol         = "tcp"
+2021-01-26T23:49:29.0079358Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:29.0079616Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:29.0079894Z               [32m+[0m [0mto_port          = 443
+2021-01-26T23:49:29.0080097Z             },
+2021-01-26T23:49:29.0080264Z           [32m+[0m [0m{
+2021-01-26T23:49:29.0080503Z               [32m+[0m [0mcidr_blocks      = [
+2021-01-26T23:49:29.0080749Z                   [32m+[0m [0m"0.0.0.0/0",
+2021-01-26T23:49:29.0080964Z                 ]
+2021-01-26T23:49:29.0081184Z               [32m+[0m [0mdescription      = "ICMP"
+2021-01-26T23:49:29.0081460Z               [32m+[0m [0mfrom_port        = -1
+2021-01-26T23:49:29.0081715Z               [32m+[0m [0mipv6_cidr_blocks = []
+2021-01-26T23:49:29.0081981Z               [32m+[0m [0mprefix_list_ids  = []
+2021-01-26T23:49:29.0082241Z               [32m+[0m [0mprotocol         = "icmp"
+2021-01-26T23:49:29.0082519Z               [32m+[0m [0msecurity_groups  = []
+2021-01-26T23:49:29.0082875Z               [32m+[0m [0mself             = false
+2021-01-26T23:49:29.0083134Z               [32m+[0m [0mto_port          = -1
+2021-01-26T23:49:29.0083347Z             },
+2021-01-26T23:49:29.0083491Z         ]
+2021-01-26T23:49:29.0083740Z       [32m+[0m [0m[1m[0mname[0m[0m                   = "challsgpub"
+2021-01-26T23:49:29.0084075Z       [32m+[0m [0m[1m[0mowner_id[0m[0m               = (known after apply)
+2021-01-26T23:49:29.0084422Z       [32m+[0m [0m[1m[0mrevoke_rules_on_delete[0m[0m = false
+2021-01-26T23:49:29.0084724Z       [32m+[0m [0m[1m[0mtags[0m[0m                   = {
+2021-01-26T23:49:29.0085019Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:29.0085217Z         }
+2021-01-26T23:49:29.0085458Z       [32m+[0m [0m[1m[0mvpc_id[0m[0m                 = (known after apply)
+2021-01-26T23:49:29.0085708Z     }
+2021-01-26T23:49:29.0085807Z 
+2021-01-26T23:49:29.0086026Z [1m  # aws_subnet.privatesnet[0m will be created[0m[0m
+2021-01-26T23:49:29.0086307Z [0m[32m  +[0m [0mresource "aws_subnet" "privatesnet" {
+2021-01-26T23:49:29.0086650Z       [32m+[0m [0m[1m[0marn[0m[0m                             = (known after apply)
+2021-01-26T23:49:29.0087001Z       [32m+[0m [0m[1m[0massign_ipv6_address_on_creation[0m[0m = false
+2021-01-26T23:49:29.0087906Z       [32m+[0m [0m[1m[0mavailability_zone[0m[0m               = "***b"
+2021-01-26T23:49:29.0088364Z       [32m+[0m [0m[1m[0mavailability_zone_id[0m[0m            = (known after apply)
+2021-01-26T23:49:29.0088764Z       [32m+[0m [0m[1m[0mcidr_block[0m[0m                      = "172.16.43.16/28"
+2021-01-26T23:49:29.0089318Z       [32m+[0m [0m[1m[0mid[0m[0m                              = (known after apply)
+2021-01-26T23:49:29.0089715Z       [32m+[0m [0m[1m[0mipv6_cidr_block_association_id[0m[0m  = (known after apply)
+2021-01-26T23:49:29.0090076Z       [32m+[0m [0m[1m[0mmap_public_ip_on_launch[0m[0m         = false
+2021-01-26T23:49:29.0090461Z       [32m+[0m [0m[1m[0mowner_id[0m[0m                        = (known after apply)
+2021-01-26T23:49:29.0090997Z       [32m+[0m [0m[1m[0mtags[0m[0m                            = {
+2021-01-26T23:49:29.0091309Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:29.0091540Z         }
+2021-01-26T23:49:29.0091989Z       [32m+[0m [0m[1m[0mvpc_id[0m[0m                          = (known after apply)
+2021-01-26T23:49:29.0092470Z     }
+2021-01-26T23:49:29.0092754Z 
+2021-01-26T23:49:29.0093151Z [1m  # aws_subnet.publicsnet[0m will be created[0m[0m
+2021-01-26T23:49:29.0093630Z [0m[32m  +[0m [0mresource "aws_subnet" "publicsnet" {
+2021-01-26T23:49:29.0093991Z       [32m+[0m [0m[1m[0marn[0m[0m                             = (known after apply)
+2021-01-26T23:49:29.0094399Z       [32m+[0m [0m[1m[0massign_ipv6_address_on_creation[0m[0m = false
+2021-01-26T23:49:29.0094836Z       [32m+[0m [0m[1m[0mavailability_zone[0m[0m               = "***b"
+2021-01-26T23:49:29.0095233Z       [32m+[0m [0m[1m[0mavailability_zone_id[0m[0m            = (known after apply)
+2021-01-26T23:49:29.0095654Z       [32m+[0m [0m[1m[0mcidr_block[0m[0m                      = "172.16.43.0/28"
+2021-01-26T23:49:29.0096060Z       [32m+[0m [0m[1m[0mid[0m[0m                              = (known after apply)
+2021-01-26T23:49:29.0096470Z       [32m+[0m [0m[1m[0mipv6_cidr_block_association_id[0m[0m  = (known after apply)
+2021-01-26T23:49:29.0096877Z       [32m+[0m [0m[1m[0mmap_public_ip_on_launch[0m[0m         = true
+2021-01-26T23:49:29.0097269Z       [32m+[0m [0m[1m[0mowner_id[0m[0m                        = (known after apply)
+2021-01-26T23:49:29.0097668Z       [32m+[0m [0m[1m[0mtags[0m[0m                            = {
+2021-01-26T23:49:29.0098062Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:29.0098302Z         }
+2021-01-26T23:49:29.0098673Z       [32m+[0m [0m[1m[0mvpc_id[0m[0m                          = (known after apply)
+2021-01-26T23:49:29.0098959Z     }
+2021-01-26T23:49:29.0099068Z 
+2021-01-26T23:49:29.0099280Z [1m  # aws_vpc.chall_vpc[0m will be created[0m[0m
+2021-01-26T23:49:29.0099593Z [0m[32m  +[0m [0mresource "aws_vpc" "chall_vpc" {
+2021-01-26T23:49:29.0099952Z       [32m+[0m [0m[1m[0marn[0m[0m                              = (known after apply)
+2021-01-26T23:49:29.0100365Z       [32m+[0m [0m[1m[0massign_generated_ipv6_cidr_block[0m[0m = false
+2021-01-26T23:49:29.0100758Z       [32m+[0m [0m[1m[0mcidr_block[0m[0m                       = "172.16.43.0/26"
+2021-01-26T23:49:29.0101185Z       [32m+[0m [0m[1m[0mdefault_network_acl_id[0m[0m           = (known after apply)
+2021-01-26T23:49:29.0101598Z       [32m+[0m [0m[1m[0mdefault_route_table_id[0m[0m           = (known after apply)
+2021-01-26T23:49:29.0102029Z       [32m+[0m [0m[1m[0mdefault_security_group_id[0m[0m        = (known after apply)
+2021-01-26T23:49:29.0102448Z       [32m+[0m [0m[1m[0mdhcp_options_id[0m[0m                  = (known after apply)
+2021-01-26T23:49:29.0102877Z       [32m+[0m [0m[1m[0menable_classiclink[0m[0m               = (known after apply)
+2021-01-26T23:49:29.0103288Z       [32m+[0m [0m[1m[0menable_classiclink_dns_support[0m[0m   = (known after apply)
+2021-01-26T23:49:29.0103698Z       [32m+[0m [0m[1m[0menable_dns_hostnames[0m[0m             = true
+2021-01-26T23:49:29.0104286Z       [32m+[0m [0m[1m[0menable_dns_support[0m[0m               = true
+2021-01-26T23:49:29.0104858Z       [32m+[0m [0m[1m[0mid[0m[0m                               = (known after apply)
+2021-01-26T23:49:29.0105412Z       [32m+[0m [0m[1m[0minstance_tenancy[0m[0m                 = "default"
+2021-01-26T23:49:29.0105988Z       [32m+[0m [0m[1m[0mipv6_association_id[0m[0m              = (known after apply)
+2021-01-26T23:49:29.0106402Z       [32m+[0m [0m[1m[0mipv6_cidr_block[0m[0m                  = (known after apply)
+2021-01-26T23:49:29.0106840Z       [32m+[0m [0m[1m[0mmain_route_table_id[0m[0m              = (known after apply)
+2021-01-26T23:49:29.0107250Z       [32m+[0m [0m[1m[0mowner_id[0m[0m                         = (known after apply)
+2021-01-26T23:49:29.0107634Z       [32m+[0m [0m[1m[0mtags[0m[0m                             = {
+2021-01-26T23:49:29.0108271Z           [32m+[0m [0m"Environment" = "Challenge"
+2021-01-26T23:49:29.0108497Z         }
+2021-01-26T23:49:29.0108661Z     }
+2021-01-26T23:49:29.0108775Z 
+2021-01-26T23:49:29.0109005Z [0m[1mPlan:[0m 18 to add, 0 to change, 2 to destroy.[0m
+2021-01-26T23:49:29.0109223Z 
+2021-01-26T23:49:29.0109462Z ------------------------------------------------------------------------
+2021-01-26T23:49:29.0109676Z 
+2021-01-26T23:49:29.0109945Z Note: You didn't specify an "-out" parameter to save this plan, so Terraform
+2021-01-26T23:49:29.0110297Z can't guarantee that exactly these actions will be performed if
+2021-01-26T23:49:29.0110609Z "terraform apply" is subsequently run.
+2021-01-26T23:49:29.0110771Z 
+2021-01-26T23:49:29.0152242Z [command]C:\hostedtoolcache\windows\terraform\0.12.3\x64\terraform.exe version
+2021-01-26T23:49:29.8870843Z Terraform v0.12.3
+2021-01-26T23:49:29.8874880Z + provider.aws v3.25.0
+2021-01-26T23:49:29.8875473Z 
+2021-01-26T23:49:29.8877623Z Your version of Terraform is out of date! The latest version
+2021-01-26T23:49:29.8880002Z is 0.14.5. You can update by downloading from www.terraform.io/downloads.html
+2021-01-26T23:49:30.0565821Z [31mToo many command line arguments. Configuration path expected.[0m[0m
+2021-01-26T23:49:31.9613365Z [31mTerraform couldn't read the given file as a state or plan file.
+2021-01-26T23:49:31.9614348Z The errors while attempting to read the file as each format are
+2021-01-26T23:49:31.9614688Z shown below.
+2021-01-26T23:49:31.9614879Z 
+2021-01-26T23:49:31.9615325Z State read error: Error loading statefile: open D:\a\r1\a\plan-binary-e8f08c1d-e123-4516-a3a0-01e5b93d7b32.tfplan: The system cannot find the file specified.
+2021-01-26T23:49:31.9615990Z 
+2021-01-26T23:49:31.9616411Z Plan read error: open D:\a\r1\a\plan-binary-e8f08c1d-e123-4516-a3a0-01e5b93d7b32.tfplan: The system cannot find the file specified.[0m[0m
+2021-01-26T23:49:31.9709722Z ##[section]Finishing: Terraform AWS : plan
+2021-01-26T23:49:31.9744054Z ##[section]Starting: Terraform AWS : apply
+2021-01-26T23:49:31.9886868Z ==============================================================================
+2021-01-26T23:49:31.9887148Z Task         : Terraform
+2021-01-26T23:49:31.9887698Z Description  : Execute terraform commands to manage resources on AzureRM, Amazon Web Services(AWS) and Google Cloud Platform(GCP)
+2021-01-26T23:49:31.9888097Z Version      : 0.0.142
+2021-01-26T23:49:31.9888339Z Author       : Microsoft Corporation
+2021-01-26T23:49:31.9888650Z Help         : [Learn more about this task](https://aka.ms/AA5j5pf)
+2021-01-26T23:49:31.9889176Z ==============================================================================
+2021-01-26T23:49:32.2509331Z [command]C:\hostedtoolcache\windows\terraform\0.12.3\x64\terraform.exe providers
+2021-01-26T23:49:33.0541488Z .
+2021-01-26T23:49:33.0542416Z └── provider.aws
+2021-01-26T23:49:33.0542852Z 
+2021-01-26T23:49:33.0554635Z [command]C:\hostedtoolcache\windows\terraform\0.12.3\x64\terraform.exe validate
+2021-01-26T23:49:34.8507177Z [32m[1mSuccess![0m The configuration is valid.
+2021-01-26T23:49:34.8517912Z [0m
+2021-01-26T23:49:34.8770348Z [command]C:\hostedtoolcache\windows\terraform\0.12.3\x64\terraform.exe apply -auto-approve
+2021-01-26T23:49:38.2919178Z [0m[1maws_eip.publiceip: Refreshing state... [id=eipalloc-0bd87bd170fbf4c08][0m
+2021-01-26T23:49:38.2921649Z [0m[1maws_vpc.chall_vpc: Refreshing state... [id=vpc-0c11e5f973fb54abd][0m
+2021-01-26T23:49:38.5142745Z [0m[1maws_internet_gateway.chall_igw: Refreshing state... [id=igw-05743f90ce247a9e8][0m
+2021-01-26T23:49:38.5206381Z [0m[1maws_subnet.publicsnet: Refreshing state... [id=subnet-05150ca1ab0dc31eb][0m
+2021-01-26T23:49:38.5207747Z [0m[1maws_route_table.chall_route_public: Refreshing state... [id=rtb-0ae7e3aaadf4039c5][0m
+2021-01-26T23:49:38.5220404Z [0m[1maws_security_group.chall_sg_pub: Refreshing state... [id=sg-035946ac303b5c5b3][0m
+2021-01-26T23:49:38.5221999Z [0m[1maws_security_group.chall_sg_priv: Refreshing state... [id=sg-083db83b58bf6d95d][0m
+2021-01-26T23:49:38.5222582Z [0m[1maws_subnet.privatesnet: Refreshing state... [id=subnet-0fa7af372fdf6ef41][0m
+2021-01-26T23:49:38.5222934Z [0m[1maws_route_table.chall_route_nat: Refreshing state... [id=rtb-0f49c938288b39325][0m
+2021-01-26T23:49:38.7289312Z [0m[1maws_route.chall_pub_route: Refreshing state... [id=r-rtb-0ae7e3aaadf4039c51080289494][0m
+2021-01-26T23:49:38.7584284Z [0m[1maws_route_table_association.chall_route_assoc_nat: Refreshing state... [id=rtbassoc-00195bbf2a1641c23][0m
+2021-01-26T23:49:38.7597141Z [0m[1maws_instance.chall_instance: Refreshing state... [id=i-082df9f6cec5a1695][0m
+2021-01-26T23:49:38.7625991Z [0m[1maws_security_group.chall_sg_nat: Refreshing state... [id=sg-02fa6c986f57ab140][0m
+2021-01-26T23:49:38.7642059Z [0m[1maws_route_table_association.chall_route_assoc_public: Refreshing state... [id=rtbassoc-0ab26c97d2b725092][0m
+2021-01-26T23:49:38.7643386Z [0m[1maws_nat_gateway.chall_nat: Refreshing state... [id=nat-0c19aadc898775b98][0m
+2021-01-26T23:49:38.9838605Z [0m[1maws_route.chall_priv_route: Refreshing state... [id=r-rtb-0f49c938288b393251080289494][0m
+2021-01-26T23:49:38.9900292Z [0m[1maws_elb.chall-elb: Refreshing state... [id=chall-elb][0m
+2021-01-26T23:49:38.9903640Z [0m[1maws_instance.jumpbox: Refreshing state... [id=i-0f9dc914b7a6998f9][0m
+2021-01-26T23:49:39.1860718Z [0m[1maws_eip.jumboxeip: Refreshing state... [id=eipalloc-088d583707e55d796][0m
+2021-01-26T23:49:41.4945077Z [0m[1maws_route_table_association.chall_route_assoc_nat: Destroying... [id=rtbassoc-00195bbf2a1641c23][0m[0m
+2021-01-26T23:49:41.4946212Z [0m[1maws_vpc.chall_vpc: Creating...[0m[0m
+2021-01-26T23:49:41.4946974Z [0m[1maws_route_table_association.chall_route_assoc_public: Destroying... [id=rtbassoc-0ab26c97d2b725092][0m[0m
+2021-01-26T23:49:41.7054044Z [0m[1maws_route_table_association.chall_route_assoc_nat: Destruction complete after 1s[0m[0m
+2021-01-26T23:49:41.7173846Z [0m[1maws_route_table_association.chall_route_assoc_public: Destruction complete after 1s[0m[0m
+2021-01-26T23:49:44.7089183Z [0m[1maws_vpc.chall_vpc: Creation complete after 4s [id=vpc-00137c9af90dc046e][0m[0m
+2021-01-26T23:49:44.7151627Z [0m[1maws_internet_gateway.chall_igw: Creating...[0m[0m
+2021-01-26T23:49:44.7156905Z [0m[1maws_route_table.chall_route_public: Creating...[0m[0m
+2021-01-26T23:49:44.7166555Z [0m[1maws_subnet.privatesnet: Creating...[0m[0m
+2021-01-26T23:49:44.7221825Z [0m[1maws_route_table.chall_route_nat: Creating...[0m[0m
+2021-01-26T23:49:44.7231565Z [0m[1maws_subnet.publicsnet: Creating...[0m[0m
+2021-01-26T23:49:44.7268761Z [0m[1maws_security_group.chall_sg_pub: Creating...[0m[0m
+2021-01-26T23:49:44.7297096Z [0m[1maws_security_group.chall_sg_priv: Creating...[0m[0m
+2021-01-26T23:49:45.4463389Z [0m[1maws_route_table.chall_route_nat: Creation complete after 0s [id=rtb-0e501481d8ee38f50][0m[0m
+2021-01-26T23:49:45.4613236Z [0m[1maws_route_table.chall_route_public: Creation complete after 0s [id=rtb-00e5ea39a9002ff28][0m[0m
+2021-01-26T23:49:45.8036100Z [0m[1maws_subnet.privatesnet: Creation complete after 1s [id=subnet-0914ae934b838aa81][0m[0m
+2021-01-26T23:49:45.8072048Z [0m[1maws_route_table_association.chall_route_assoc_nat: Creating...[0m[0m
+2021-01-26T23:49:45.8148713Z [0m[1maws_security_group.chall_sg_nat: Creating...[0m[0m
+2021-01-26T23:49:46.1188056Z [0m[1maws_subnet.publicsnet: Creation complete after 1s [id=subnet-08758a2b56b979a9c][0m[0m
+2021-01-26T23:49:46.1221068Z [0m[1maws_route_table_association.chall_route_assoc_public: Creating...[0m[0m
+2021-01-26T23:49:46.1221948Z [0m[1maws_nat_gateway.chall_nat: Creating...[0m[0m
+2021-01-26T23:49:46.1227074Z [0m[1maws_route_table_association.chall_route_assoc_nat: Creation complete after 0s [id=rtbassoc-087c71e58e4a5f54f][0m[0m
+2021-01-26T23:49:46.1239552Z [0m[1maws_internet_gateway.chall_igw: Creation complete after 1s [id=igw-0769e3c666a753b0f][0m[0m
+2021-01-26T23:49:46.1360711Z [0m[1maws_route.chall_pub_route: Creating...[0m[0m
+2021-01-26T23:49:46.4681026Z [0m[1maws_route_table_association.chall_route_assoc_public: Creation complete after 0s [id=rtbassoc-0eea8545cbaba864b][0m[0m
+2021-01-26T23:49:47.3923085Z [0m[1maws_security_group.chall_sg_priv: Creation complete after 2s [id=sg-0b914e35a6b54ca4d][0m[0m
+2021-01-26T23:49:47.3992780Z [0m[1maws_instance.chall_instance: Creating...[0m[0m
+2021-01-26T23:49:47.5147559Z [0m[1maws_route.chall_pub_route: Creation complete after 2s [id=r-rtb-00e5ea39a9002ff281080289494][0m[0m
+2021-01-26T23:49:47.6693861Z [0m[1maws_security_group.chall_sg_pub: Creation complete after 3s [id=sg-0d806835f13ee0fe5][0m[0m
+2021-01-26T23:49:48.5365982Z [0m[1maws_security_group.chall_sg_nat: Creation complete after 3s [id=sg-0d601d25f3cb88253][0m[0m
+2021-01-26T23:49:48.5427958Z [0m[1maws_instance.jumpbox: Creating...[0m[0m
+2021-01-26T23:49:56.1226830Z [0m[1maws_nat_gateway.chall_nat: Still creating... [10s elapsed][0m[0m
+2021-01-26T23:49:57.4028308Z [0m[1maws_instance.chall_instance: Still creating... [10s elapsed][0m[0m
+2021-01-26T23:49:58.5449120Z [0m[1maws_instance.jumpbox: Still creating... [10s elapsed][0m[0m
+2021-01-26T23:50:06.1238350Z [0m[1maws_nat_gateway.chall_nat: Still creating... [20s elapsed][0m[0m
+2021-01-26T23:50:07.4014833Z [0m[1maws_instance.chall_instance: Still creating... [20s elapsed][0m[0m
+2021-01-26T23:50:08.5452571Z [0m[1maws_instance.jumpbox: Still creating... [20s elapsed][0m[0m
+2021-01-26T23:50:16.1245998Z [0m[1maws_nat_gateway.chall_nat: Still creating... [30s elapsed][0m[0m
+2021-01-26T23:50:17.4025139Z [0m[1maws_instance.chall_instance: Still creating... [30s elapsed][0m[0m
+2021-01-26T23:50:18.5459131Z [0m[1maws_instance.jumpbox: Still creating... [30s elapsed][0m[0m
+2021-01-26T23:50:20.7776538Z [0m[1maws_instance.chall_instance: Creation complete after 34s [id=i-02bb6ad0a28b96b6e][0m[0m
+2021-01-26T23:50:20.7828892Z [0m[1maws_elb.chall-elb: Creating...[0m[0m
+2021-01-26T23:50:25.5338262Z [0m[1maws_elb.chall-elb: Creation complete after 5s [id=chall-elb][0m[0m
+2021-01-26T23:50:26.1245384Z [0m[1maws_nat_gateway.chall_nat: Still creating... [40s elapsed][0m[0m
+2021-01-26T23:50:28.5464844Z [0m[1maws_instance.jumpbox: Still creating... [40s elapsed][0m[0m
+2021-01-26T23:50:32.8453646Z [0m[1maws_instance.jumpbox: Provisioning with 'file'...[0m[0m
+2021-01-26T23:50:36.1247307Z [0m[1maws_nat_gateway.chall_nat: Still creating... [50s elapsed][0m[0m
+2021-01-26T23:50:38.5473623Z [0m[1maws_instance.jumpbox: Still creating... [50s elapsed][0m[0m
+2021-01-26T23:50:46.1254897Z [0m[1maws_nat_gateway.chall_nat: Still creating... [1m0s elapsed][0m[0m
+2021-01-26T23:50:48.5479911Z [0m[1maws_instance.jumpbox: Still creating... [1m0s elapsed][0m[0m
+2021-01-26T23:50:56.1262332Z [0m[1maws_nat_gateway.chall_nat: Still creating... [1m10s elapsed][0m[0m
+2021-01-26T23:50:58.5480625Z [0m[1maws_instance.jumpbox: Still creating... [1m10s elapsed][0m[0m
+2021-01-26T23:51:06.1269475Z [0m[1maws_nat_gateway.chall_nat: Still creating... [1m20s elapsed][0m[0m
+2021-01-26T23:51:08.5486901Z [0m[1maws_instance.jumpbox: Still creating... [1m20s elapsed][0m[0m
+2021-01-26T23:51:11.8629395Z [0m[1maws_instance.jumpbox: Provisioning with 'file'...[0m[0m
+2021-01-26T23:51:12.4172478Z [0m[1maws_instance.jumpbox: Creation complete after 1m23s [id=i-0eda8b7280ba171aa][0m[0m
+2021-01-26T23:51:12.4226768Z [0m[1maws_eip.jumboxeip: Creating...[0m[0m
+2021-01-26T23:51:14.2701818Z [0m[1maws_eip.jumboxeip: Creation complete after 2s [id=eipalloc-05e60ca9f97029ac1][0m[0m
+2021-01-26T23:51:16.1279113Z [0m[1maws_nat_gateway.chall_nat: Still creating... [1m30s elapsed][0m[0m
+2021-01-26T23:51:23.0418798Z [0m[1maws_nat_gateway.chall_nat: Creation complete after 1m37s [id=nat-0fd21f8bacad22a48][0m[0m
+2021-01-26T23:51:23.0440921Z [0m[1maws_route.chall_priv_route: Creating...[0m[0m
+2021-01-26T23:51:23.9983196Z [0m[1maws_route.chall_priv_route: Creation complete after 1s [id=r-rtb-0e501481d8ee38f501080289494][0m[0m
+2021-01-26T23:51:24.2984748Z [0m[1m[32m
+2021-01-26T23:51:24.2986070Z Apply complete! Resources: 18 added, 0 changed, 2 destroyed.[0m
+2021-01-26T23:51:24.2986478Z [0m[1m[32m
+2021-01-26T23:51:24.2986774Z Outputs:
+2021-01-26T23:51:24.2986978Z 
+2021-01-26T23:51:24.2987865Z ELBIP = chall-elb-1526770643.***.elb.amazonaws.com[0m
+2021-01-26T23:51:25.1861869Z ##[section]Finishing: Terraform AWS : apply
+2021-01-26T23:51:25.1935496Z ##[section]Starting: Finalize Job
+2021-01-26T23:51:25.1986386Z Cleaning up task key
+2021-01-26T23:51:25.1988112Z Start cleaning up orphan processes.
+2021-01-26T23:51:25.2076327Z ##[section]Finishing: Finalize Job
+2021-01-26T23:51:25.2125961Z ##[section]Finishing: AWS Workload

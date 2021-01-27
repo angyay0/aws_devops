@@ -36,7 +36,7 @@ Los comandos que se encuentran en la sección DSC Script es lo que se ejecutó m
 La ejecución se ejecutó a través de Azure DevOps/Local usando la extension Token Replacement, para evitar colocar datos sensibles de AWS en los archivos, la validación se ejecutó en entorno local y en la nube.
 
 
-Se incluyen los logs de ejecución a travéz de Azure Pipelines en */logs*
+Se incluyen los logs de ejecución a travéz de Azure Pipelines en */logs/log*
 
 ## IAM, Key Pair
 Se uso una entidad para _IAM_ y poder utilizarla en el proceso de despliegue, tiene las siguientes reglas habilitadas:
