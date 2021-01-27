@@ -1,4 +1,4 @@
-# Solution
+# Solucion
 El archivo de despliegue contiene las configuraciones para el despliegue a través de pipelines para la siguiente arquitectura
 
 ![Arquitectura](imgs/solarch.jpg)
